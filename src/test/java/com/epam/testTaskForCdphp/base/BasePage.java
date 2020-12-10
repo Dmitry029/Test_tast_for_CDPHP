@@ -28,7 +28,7 @@ public class BasePage {
     }
 
     /**
-     * Get title of current page
+     * Get title of current page.
      */
     public String getCurrentPageTitle() {
         return driver.getTitle();
@@ -36,14 +36,14 @@ public class BasePage {
 
 
     /**
-     * Switch to iFrame using it's locator
+     * Switch to iFrame using it's locator.
      */
     protected void switchToFrame(WebElement element) {
         driver.switchTo().frame(element);
     }
 
     /**
-     * Switch to top (default content)
+     * Switch to top (default content).
      */
     protected void switchToTop() {
         driver.switchTo().defaultContent();
@@ -69,7 +69,7 @@ public class BasePage {
 
 
     /**
-     * Perform scroll to the bottom
+     * Perform scroll to the bottom.
      */
     public void scrollToBottom() {
         log.info("*** Scrolling to the bottom of the page");
